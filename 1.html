@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Homework</title>
+</head>
+<body>
+  Введите градусы цельсия
+  <input type="text" id="grad">
+  <button onclick="rezult()">Перевести</button>
+  <br>
+  <p id="out">Тут будет ответ</p>
+
+<script>
+  "use strict";
+function rezult() {
+
+  var x, y, z;
+
+  x = document.getElementById('grad').value;
+  x = parseInt(x);
+
+  y = x*1.8+32;
+
+  z = (x + " градусов это " + y + " по фаренгейту" );
+
+  document.getElementById('out').innerHTML = z;
+}
+</script>
+</body>
+</html>
